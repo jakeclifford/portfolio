@@ -1,0 +1,148 @@
+
+.portfolio {
+    background-image: linear-gradient(to right, #006296, #70c2bb);
+    padding: 0 10%;
+
+    @media (max-width: 900px) {
+        padding: 0;
+    }
+    
+
+    h1 {
+        margin: 1.5rem 0;
+        text-align: center;
+        font-size: 2.5rem;
+        color: white;
+    }
+
+    .carousal {
+        max-width: 1000px;
+        margin: auto;
+        overflow: visible;
+        
+    }
+
+    .project-container {
+
+        display: flex;
+        flex-direction: column;
+        overflow: visible;
+        height: 400px;
+        margin: auto;
+        @media (max-width: 900px) {
+            max-width: 400px;
+        }
+
+        
+        
+
+        .project-content {
+            margin-top: 5px;
+            display: flex;
+            background-color: white;
+            transform:
+                perspective(800px)
+                rotateY(0deg);
+            transition: transform 1s ease 0s;
+            border-radius: 4px;
+            box-shadow:
+                 rgba(0, 0, 0, 0.024) 0px 0px 0px 1px,
+                 rgba(0, 0, 0, 0.05) 0px 1px 0px 0px,
+                 rgba(0, 0, 0, 0.03) 0px 0px 8px 0px,
+                 rgba(0, 0, 0, 0.16) 0px 10px 15px 0px;
+    
+            height: 350px;
+            width: 85%;
+            margin: auto;
+
+            @media (max-width: 900px) {
+                flex-direction: column-reverse;
+                justify-content: space-between;
+            }
+
+            
+        
+            &:hover {
+                    transform: perspective(800px) rotateY(4deg);
+                    box-shadow:
+                         rgba(0, 0, 0, 0.091) 0px 0px 0px 1px,
+                         rgba(0, 0, 0, 0.139) 0px 1px 0px 0px,
+                         rgba(0, 0, 0, 0.201) 0px 0px 8px 0px,
+                         rgba(0, 0, 0, 0.18) 0px 10px 15px 0px;
+                  }
+            
+    
+    
+            .project-left {
+                width: 50%;
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+
+                @media (max-width: 900px) {
+                    width: 100%;
+                    padding-top: 0;
+                }
+                
+                h2 {
+                    font-size: 2rem
+                }
+                
+
+                .project-description {
+
+                    color: rgb(92, 92, 92);
+
+                    @media (max-width: 900px) {
+                        display: none;
+                    }
+                }
+    
+                .project-buttons {
+                    margin-top: auto;
+                    display: flex;
+                    overflow: visible;
+                    justify-content: space-between;
+
+
+                    a {
+
+                        &:hover {
+                            transform: scale(1.05);
+                            -webkit-transform: scale(1.05);
+
+                            button {
+                                cursor: pointer;
+                            }
+                        }
+
+                    }
+                    
+                }
+                
+            }
+    
+            .project-image {
+                height: 100%;
+                object-fit: cover;
+                overflow: hidden;
+                margin: auto;
+                display: block;
+                
+                
+                @media (max-width: 900px) {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+    
+        }
+    
+
+    }
+
+    
+    
+
+}
+

@@ -1,0 +1,55 @@
+.contact {
+    background-image: linear-gradient(to right, #006296, #70c2bb);
+    display: flex;
+
+
+    .button{
+        border: none;
+        background-color: #0a82a7;
+        border-radius: 10px;
+        color: white;
+        padding: 5px 10px;
+        margin-top: 10px;
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+    h1{
+        margin-bottom: 20px;
+    }
+
+    .contact-container{
+        width: 500px;
+        margin: auto;
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+
+        .top{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+
+            div{
+                width: 47.5%;
+
+                label{
+                    margin-right: 2.5px;
+                }
+
+                input{
+                    width: 100%
+
+                }
+            }
+        }
+
+        textarea{
+            width: 100%
+        }
+
+        
+    }
+}

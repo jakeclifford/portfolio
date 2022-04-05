@@ -1,0 +1,151 @@
+.topnav {
+    width: 100%;
+    height: 70px;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    transition: all 2s ease;
+    
+
+    .wrapper {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        height: 70px;
+        padding: 12px 30px;
+        justify-content: space-between;
+        overflow: visible;
+
+        .left {
+            height: 100%;
+            display: flex;
+            flex-grow: 1;
+            flex-basis: 0;
+            overflow: none;
+
+        
+            a {
+
+                border-radius:7px;
+                height: 100%;
+                
+
+               
+
+                svg {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                    display: block;
+
+                    &:hover path{
+                        fill: rgb(7, 138, 92);
+                    }
+
+                    
+                }
+            }  
+
+                
+        }
+
+        .social {
+            display: flex;
+            align-items: center;
+            
+            a {
+                text-decoration: none;
+                color: rgb(0, 0, 0);
+                padding: 0 15px;
+                transition: all 0.1s ease;
+
+                &:hover{
+                    color: #006094;
+                }
+            }
+
+        }
+
+        .right {
+            flex-grow: 1;
+            flex-basis: 0;
+            display: flex;
+            width: 100%;
+            justify-content: flex-end;
+            overflow: visible;
+
+            .hamburger {
+                width:32px;
+                height: 35px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                cursor: pointer;
+                overflow: visible;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+
+                span {
+                    width: 35px;
+                    height: 4px;
+                    background-color: black;
+                    transition: all 2s ease;
+                    border-radius: 10px;
+                }
+            }
+            
+        }
+    }
+
+    &.active {
+        background-color: #006296;
+
+        .left a {
+
+            &:hover {
+                transform: scale(1.05);
+            }
+        
+            svg path{
+                fill: rgb(255, 255, 255);
+            }
+
+            &:hover svg path {
+                fill:rgb(133, 225, 203)
+            }
+        
+        }
+
+        .social a {
+            color: white;
+        }
+
+
+        .wrapper .right .hamburger {
+
+            span {
+                transform-origin: left;
+
+                &:first-child {
+                    background-color: white;
+                    transform: rotate(45deg);
+                    width: 33px;
+                }
+                &:nth-child(2){
+                    opacity: 0;
+                }
+                &:last-child {
+                    background-color: white;
+                    transform: rotate(-45deg);
+                    width: 33px;
+                }
+            }
+        }
+    }
+}
+
+    
+
