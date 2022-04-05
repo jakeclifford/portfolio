@@ -43,7 +43,7 @@ export default function Contact() {
                             <textarea name="message" required />
                         </div>
                         
-                        <input class='button' type="submit" value="Submit"/>
+                        <input className='button' type="submit" value="Submit"/>
                     </form>
             </div>
         </div>
