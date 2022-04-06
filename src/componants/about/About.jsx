@@ -1,14 +1,11 @@
 import React, {useState} from 'react'
 import "./about.scss"
 import Display from "./Display.svg"
-import Frontend from "./Frontend-display.svg"
+import Frontend from "./Frontend-display.png"
 import Blockchain from "./Blockchain-display.svg"
 import Ui from "./Ui-display.svg"
 import Cs from "./Cs-display.svg"
-import FrontendIcon from "./icons/frontend.svg"
-import UiIcon from "./icons/UI.svg"
-import BlockchainIcon from "./icons/blockchain.svg"
-import CsIcon from "./icons/CS.svg"
+
 
 
 
@@ -36,6 +33,7 @@ export default function About() {
             <div className="display">
                 <img src={display} />
             </div>
+
         </div>
     )
 }
