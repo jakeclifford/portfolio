@@ -3,6 +3,10 @@
     background-color: white;
     flex-direction: column;
 
+    .hidden{
+        display: none 
+    }
+
 
     h1 {
         margin: 0.75rem 0;
