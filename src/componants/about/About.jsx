@@ -19,17 +19,17 @@ export default function About() {
     return (
         <div className="about" id="about">
             <div className="skills">
-                <div className="skill" onMouseEnter={() => setDisplay(Frontend)} onMouseLeave={() => setDisplay(Display)}>
-                        <img src={FrontendIcon} alt="frontend" />
+                <div className="skill" onClick={() => setDisplay(Frontend)}>
+                    <button>Frontend</button>
                 </div>
-                <div className="skill" onMouseEnter={() => setDisplay(Ui)} onMouseLeave={() => setDisplay(Display)}>
-                    <img src={UiIcon} alt="Ui" />
+                <div className="skill" onClick={() => setDisplay(Ui)}>
+                    <button>UI/UX</button>
                 </div>
-                <div className="skill" onMouseEnter={() => setDisplay(Blockchain)} onMouseLeave={() => setDisplay(Display)}>
-                    <img src={BlockchainIcon} alt="blockchain" />
+                <div className="skill" onClick={() => setDisplay(Blockchain)}>
+                    <button>Web3</button>
                 </div>
-                <div className="skill" onMouseEnter={() => setDisplay(Cs)} onMouseLeave={() => setDisplay(Display)}>
-                    <img src={CsIcon} alt="Cs" />
+                <div className="skill" onClick={() => setDisplay(Cs)}>
+                    <button>Computer Science</button>
                 </div>
             </div>
             <div className="display">
