@@ -11,14 +11,14 @@ import ClipLoader from "react-spinners/ClipLoader"
 function App() {
 
   
-  const [loading, setLoading] = useState(false)
+  const [loading, setLoading] = useState(true)
   const [menuOpen, setMenuOpen] = useState(false)
 
   useEffect(() => {
     setLoading(true)
     setTimeout(() => {
       setLoading(false)
-    },5000)
+    },3500)
   }, [])
   
   return (
