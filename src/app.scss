@@ -5,6 +5,7 @@
     justify-content: center;
     display: flex;
     background-image: linear-gradient(to right, #006296, #70c2bb);
+    z-index: 100;
 
     .load-container{
         display: flex;
