@@ -70,7 +70,7 @@ function Item(props)
 export default function Portfolio(props) {
     return (
         <div className="portfolio" id="portfolio">
-            <h1>PROJECTSs</h1>
+            <h1>PROJECTS</h1>
             <div className="carousal">
                 <Example />
             </div>
