@@ -1,3 +1,25 @@
+.loader{
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-image: linear-gradient(to right, #006296, #70c2bb);
+
+    .load-container{
+        display: flex;
+        flex-direction: column;
+        overflow: visible;
+        align-items: center;
+    
+        svg{
+            margin-bottom: 10px;
+        }
+        
+    }
+    
+
+}
 
 
 .app {
