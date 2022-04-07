@@ -15,11 +15,11 @@ export default function About() {
 
     useEffect(() => {
         const displays = [Frontend, Ui, Blockchain, Cs]
-        for (item in displays){
+        for (let item in displays){
             setDisplay(item)
         }
         setDisplay(Display)
-    })
+    }, [])
 
     return (
         <div className="about" id="about">
