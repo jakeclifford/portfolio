@@ -13,14 +13,7 @@ export default function About() {
 
     const [display, setDisplay] = useState(Display)
 
-    useEffect(() => {
-        const displays = [Frontend, Ui, Blockchain, Cs]
-        for (let item in displays){
-            setDisplay(item)
-            setTimeout(2000)
-        }
-        setDisplay(Display)
-    }, [])
+    
 
     return (
         <div className="about" id="about">
@@ -40,7 +33,11 @@ export default function About() {
                 </div>
             </div>
             <div className="display">
-                <img src={display} />
+                <img className= {display == Display ? "" : "hidden"} src={Display} />
+                <img className= {display == Frontend ? "" : "hidden"} src={Frontend} />
+                <img className= {display == Ui ? "" : "hidden"} src={Ui} />
+                <img className= {display == Blockchain ? "" : "hidden"} src={Blockchain} />
+                <img className= {display == Cs ? "" : "hidden"} src={Cs} />
             </div>
 
         </div>
