@@ -17,6 +17,7 @@ export default function About() {
         const displays = [Frontend, Ui, Blockchain, Cs]
         for (let item in displays){
             setDisplay(item)
+            setTimeout(2000)
         }
         setDisplay(Display)
     }, [])
