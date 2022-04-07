@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import "./about.scss"
 import Display from "./Display.svg"
 import Frontend from "./Frontend-display.png"
@@ -12,6 +12,14 @@ import Cs from "./Cs-display.svg"
 export default function About() {
 
     const [display, setDisplay] = useState(Display)
+
+    useEffect(() => {
+        const displays = [Frontend, Ui, Blockchain, Cs]
+        for (item in displays){
+            setDisplay(item)
+        }
+        setDisplay(Display)
+    })
 
     return (
         <div className="about" id="about">
