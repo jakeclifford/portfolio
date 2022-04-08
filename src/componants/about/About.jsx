@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import "./about.scss"
 import Display from "./Display.svg"
-import Frontend from "./Frontend-display.png"
+import Frontend from "./Frontend-display.svg"
 import Blockchain from "./Blockchain-display.svg"
 import Ui from "./Ui-display.svg"
 import Cs from "./Cs-display.svg"
