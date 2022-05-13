@@ -6,11 +6,19 @@ import Image1 from "./Limitless.png"
 import Image2 from "./quiz.png"
 import Image3 from "./Splitter.png"
 import Image4 from "./spacex.png"
+import Image5 from "./blackjack.png"
 import { Google } from '@mui/icons-material'
 
 function Example(props)
 {
     var items = [
+        {
+            name: "Blackjack Training",
+            description: "Built using vanilla javascript",
+            image: Image5,
+            link: "https://jakeclifford.github.io/blackjackTrainer/",
+            github: "https://github.com/jakeclifford/blackjackTrainer"
+        },
         {
             name: "Quiz Smash",
             description: "Quiz app built with react making use of useState and useEffect",
