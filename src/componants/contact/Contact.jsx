@@ -18,6 +18,7 @@ export default function Contact() {
         ).then(res => {
             console.log(res)
             alert("Email Succesfully Sent")
+            document.getElementById('contact-form').reset()
         }).catch(err => console.log(err))
 
 
@@ -27,7 +28,7 @@ export default function Contact() {
         <div className="contact" id="contact">
             <div className="contact-container">
                 <h1>Contact Me!</h1>
-                    <form onSubmit={sendEmail}>
+                    <form id="contact-form" onSubmit={sendEmail}>
                         <div className='top'>
                             <div>
                                 <label htmlFor="name">Name:</label>
