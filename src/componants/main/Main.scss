@@ -160,12 +160,20 @@
 .bubble {
   background: hsla(183, 94%, 37%, 0.815);
   position: fixed;
-  top: 70vh;
+  top: 50vh;
+  left: 45vw;
   display: block;
   width: 135vh;
   height: 135vh;
   border-radius: 50%;
   z-index: -2;
+
+  @media only screen and (max-width: 400px) {
+    top: 75vh;
+    left: auto;
+    right: auto;
+    
+  }
 
   &:hover {
     left: 40%;

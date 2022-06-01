@@ -50,7 +50,7 @@ function Example(props)
     ]
 
     return (
-        <Carousel navButtonsAlwaysVisible='true' animation='slide' duration='1500' >
+        <Carousel navButtonsAlwaysVisible='true' animation='slide' autoPlay={false} >
             
             {
                 items.map( (item, i) => <Item key={i} item={item} /> )
