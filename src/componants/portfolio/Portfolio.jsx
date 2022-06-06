@@ -7,11 +7,19 @@ import Image2 from "./quiz.png"
 import Image3 from "./Splitter.png"
 import Image4 from "./spacex.png"
 import Image5 from "./blackjack.png"
+import Image6 from "./qode.png"
 import { Google } from '@mui/icons-material'
 
 function Example(props)
 {
     var items = [
+        {
+            name: "qode.design",
+            description: "React application ",
+            image: Image6,
+            link: "https://qode.design",
+            github: "https://github.com/jakeclifford/qode"
+        },
         {
             name: "Blackjack Training",
             description: "Built using vanilla javascript",
