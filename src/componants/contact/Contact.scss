@@ -17,8 +17,13 @@
         }
     }
 
-    h1{
-        margin-bottom: 20px;
+    h1 {
+        top: 310vh;
+        left: -100px;
+        font-size: 4rem;
+        color: rgb(143, 207, 255);
+        transform: rotate(-90deg);
+        position: absolute;
     }
 
     .contact-container{

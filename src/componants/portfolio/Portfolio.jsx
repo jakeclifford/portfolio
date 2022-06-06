@@ -87,8 +87,10 @@ export default function Portfolio(props) {
     return (
         <div className="portfolio" id="portfolio">
             <h1>PROJECTS</h1>
-            <div className="carousal">
-                <Example />
+            <div className='container'>
+                <div className="carousal">
+                    <Example />
+                </div>
             </div>
         </div>
     )

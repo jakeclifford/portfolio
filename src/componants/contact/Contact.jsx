@@ -26,8 +26,9 @@ export default function Contact() {
 
     return (
         <div className="contact" id="contact">
+            <h1>CONTACT</h1>
             <div className="contact-container">
-                <h1>Contact Me!</h1>
+                
                     <form id="contact-form" onSubmit={sendEmail}>
                         <div className='top'>
                             <div>
