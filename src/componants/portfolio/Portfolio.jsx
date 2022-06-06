@@ -1,60 +1,49 @@
 import React from 'react'
 import "./portfolio.scss"
 import Carousel from 'react-material-ui-carousel'
-import { Paper, Button } from '@mui/material'
-import Image1 from "./Limitless.png"
-import Image2 from "./quiz.png"
-import Image3 from "./Splitter.png"
-import Image4 from "./spacex.png"
-import Image5 from "./blackjack.png"
-import Image6 from "./qode.png"
-import { Google } from '@mui/icons-material'
+import quizMain from "./quiz.png"
+import splitterMain from "./Splitter.png"
+import spacexMain from "./spacex.png"
+import qodeMain from "./qode.png"
+import qodeLogo from "./qode.svg"
+
 
 function Example(props)
 {
     var items = [
         {
             name: "qode.design",
-            description: "React application ",
-            image: Image6,
+            logo: qodeLogo,
+            description: "Design application built using react allowing to user to generate a custom QR code design. App uses fetch API requests, MUI libary and react hooks",
+            image: qodeMain,
             link: "https://qode.design",
             github: "https://github.com/jakeclifford/qode"
         },
         {
-            name: "Blackjack Training",
-            description: "Built using vanilla javascript",
-            image: Image5,
-            link: "https://jakeclifford.github.io/blackjackTrainer/",
-            github: "https://github.com/jakeclifford/blackjackTrainer"
-        },
-        {
             name: "Quiz Smash",
+            logo: "",
             description: "Quiz app built with react making use of useState and useEffect",
-            image: Image2,
+            image: quizMain,
             link: "https://quiz-smash.vercel.app/",
             github: "https://github.com/jakeclifford/quiz-smash"
         },
         {
             name: "Lauch Tracker",
+            logo: "",
             description: "Web app that tracks recent and upcoming launches from space X",
-            image: Image4,
+            image: spacexMain,
             link: "https://jakeclifford.github.io/spaceXLaunches",
             github: "https://github.com/jakeclifford/spaceXLaunches"
         },
         {
             name: "Splitter",
+            logo: "",
             description: "Web app to splic bills, Created with just HTML, CSS and Javascript",
-            image: Image3,
+            image: splitterMain,
             link: "https://jakeclifford.github.io/splitter/",
             github: "https://github.com/jakeclifford/splitter"
-        },
-        {
-            name: "LimitlessDAO",
-            description: "A decentralised and trustless voting system that requires an NFT membership to vote on proposals. REQUIRES METAMASK WALLET ON RINKEBY TEST NETWORK",
-            image: Image1,
-            link: "https://limitless-dao.vercel.app/",
-            github: "https://github.com/jakeclifford/LimitlessDAO"
         }
+     
     ]
 
     return (
@@ -73,7 +62,10 @@ function Item(props)
                 <div className="project-container">
                     <div className="project-content">
                         <div className="project-left">
-                            <h2>{props.item.name}</h2>
+                            <div class="project-header">
+                                <h2>{props.item.name}</h2>
+                                {props.item.logo !== "" && <img class="logo" src={props.item.logo}></img>}
+                            </div>
                             <p className="project-description">{props.item.description}</p>
                             <div className="project-buttons">
                                 <a href={props.item.link} target="_blank"><button>View Project</button></a>
