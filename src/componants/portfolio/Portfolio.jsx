@@ -14,10 +14,18 @@ function Example(props)
         {
             name: "qode.design",
             logo: qodeLogo,
-            description: "Design application built using react allowing to user to generate a custom QR code design. App uses fetch API requests, MUI libary and react hooks",
+            description: "Design application built with React using functional components, ES6 syntax and SCSS. Use of REST API's to generate custom QR codes for users.",
             image: qodeMain,
             link: "https://qode.design",
             github: "https://github.com/jakeclifford/qode"
+        },
+        {
+            name: "SpaceX Launches",
+            logo: "",
+            description: "Web app built with React that tracks recent and upcoming launches from space X",
+            image: spacexMain,
+            link: "https://spacex-five.vercel.app",
+            github: "https://github.com/jakeclifford/spacex"
         },
         {
             name: "Quiz Smash",
@@ -28,17 +36,9 @@ function Example(props)
             github: "https://github.com/jakeclifford/quiz-smash"
         },
         {
-            name: "Lauch Tracker",
-            logo: "",
-            description: "Web app that tracks recent and upcoming launches from space X",
-            image: spacexMain,
-            link: "https://jakeclifford.github.io/spaceXLaunches",
-            github: "https://github.com/jakeclifford/spaceXLaunches"
-        },
-        {
             name: "Splitter",
             logo: "",
-            description: "Web app to splic bills, Created with just HTML, CSS and Javascript",
+            description: "Web app to split bills, Created with just HTML, CSS and Javascript",
             image: splitterMain,
             link: "https://jakeclifford.github.io/splitter/",
             github: "https://github.com/jakeclifford/splitter"
@@ -62,7 +62,7 @@ function Item(props)
                 <div className="project-container">
                     <div className="project-content">
                         <div className="project-left">
-                            <div class="project-header">
+                            <div className="project-header">
                                 <h2>{props.item.name}</h2>
                                 {props.item.logo !== "" && <img class="logo" src={props.item.logo}></img>}
                             </div>
