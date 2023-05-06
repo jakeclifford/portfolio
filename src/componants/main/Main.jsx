@@ -12,7 +12,7 @@ export default function Main() {
         init(textRef.current, {
             showCursor: true,
             backDelay: 1000,
-            strings: ["Front-End Developer.", "UI Designer.", "Web3 Developer."]
+            strings: ["Shopify Developer.", "Front-end Devloper.", "UI Designer."]
         })
     },[])
     

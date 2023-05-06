@@ -25,29 +25,28 @@ export default function Contact() {
     }
 
     return (
-        <div className="contact" id="contact">
-            <h1>CONTACT</h1>
-            <div className="contact-container">
-                <h2>Send me an email!</h2>
-                    <form id="contact-form" onSubmit={sendEmail}>
-                        <div className='top'>
-                            <div>
-                                <label htmlFor="name">Name:</label>
-                                <input type="text" name="name" required />
-                            </div>
-                            <div>
-                                <label htmlFor="email">Email:</label>
-                                <input type="email" name="email" required />
-                            </div>
-                        </div>
-                        <div>
-                            <label htmlFor="message">Message:</label>
-                            <textarea name="message" required />
-                        </div>
-                        
-                        <input className='button' type="submit" value="Submit"/>
-                    </form>
-            </div>
+        <div class="contact">
+        <h2>Would Love to Hear From You 👋</h2>
+        <div class="contact-container">
+            <form id="contact-form" onSubmit={sendEmail}>
+    
+                <div class='input-container'>
+                    <label htmlFor="name">Name:</label>
+                    <input type="text" name="name" required />
+                </div>
+                <div class='input-container'>
+                    <label htmlFor="email">Email:</label>
+                    <input type="email" name="email" required />
+                </div>
+                <div class='input-container'>
+                    <label htmlFor="message">Message:</label>
+                    <textarea name="message" required></textarea>
+                </div>
+    
+                <input class='contact-button' type="submit" value="Submit"/>
+            </form>
         </div>
+    </div>
+    
     )
 }

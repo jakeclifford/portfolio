@@ -1,81 +1,83 @@
-.about {
+.testimonials-section {
+    padding: 20px;
+    text-align: center;
+    background: white;
+    position: relative;
+  }
+
+  .testimonials-title{
+    font-size: 2em;
+    margin-top: 5vh;
+  }
+
+  .higlighted{
+    text-decoration: wavy;
+    color: #008ad5;;
+  }
+  
+  .testimonials-container {
     display: flex;
-    background-color: white;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .testimonial {
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    width: 350px;
+    padding: 20px;
+    margin: 15px;
+    background-color: #ffffff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 10px;
+    z-index: 2;
+    transition: transform 1s ease-in-out; /* Add transition for smooth scaling */
+  }
+  
+  .testimonial:hover {
+    transform: scale(1.02); /* Scale the element by a factor of 1.1 on hover */
+  }
+  
+  
+  .quote {
+    font-style: italic;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .name {
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  .designation {
+    font-size: 12px;
+    color: #777;
+  }
 
-    .hidden{
-        display: none 
+  .stars {
+    width: 150px
+  }
+
+  .quote-image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 150px;
+    z-index: 1;
+    animation: floating 3s ease-in-out infinite;
+  }
+  
+  @keyframes floating {
+    0% {
+      transform: translateY(0);
     }
-
-
-    h1 {
-        top: 220vh;
-        left: -35px;
-        font-size: 4rem;
-        color: rgb(86, 86, 86);
-        transform: rotate(-90deg);
-        position: absolute;
-
-        @media screen and (max-width: 1000px) {
-            display: none;
-        }
+    50% {
+      transform: translateY(-10px);
     }
-
-    .skills {
-        margin:10px auto;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        z-index: 5;
-        padding: 10px;
-
-        .skill {
-
-
-            margin: auto;
-            width: 100%;
-            text-align: center;
-            background-color: #006296;
-            color: white;
-            border-right: 3px solid white;
-            border-left: 3px solid white;
-            font-size: 0.75rem;
-            cursor: pointer;
-
-            &:hover{
-                background-color: rgb(217, 249, 255);
-                color: #00466c;
-            }
-
-            
-           
-            
-            h2{
-                padding: 10px;
-            }
-
-               
-            
-            
-            
-        }
-
-        .skill-selected{
-            background-color: rgb(217, 249, 255);
-            color: #00466c;
-        }      
+    100% {
+      transform: translateY(0);
     }
-
-    .display {
-        margin: auto;
-        height: 90%;
-        width: auto;
-
-        img {
-            height: 90%;
-            width: 100%;
-        }
-    }
-
-    
-   
-}
+  }
+  
