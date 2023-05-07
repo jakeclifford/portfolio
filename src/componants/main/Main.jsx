@@ -2,6 +2,7 @@ import React, {useEffect, useRef} from 'react'
 import "./Main.scss"
 import jake from "./jake.png"
 import arrow from "./down.svg"
+import Graphic1 from "./graphic1.png"
 import { init } from 'ityped'
 
 
@@ -35,7 +36,7 @@ export default function Main() {
                 </div>
             </div>
             
-                <div className="bubble"></div>
+            <img id='graphic1' src={Graphic1} alt="abstract graphic" />
                 
             
         </div>
