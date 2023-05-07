@@ -7,7 +7,7 @@ export default function Services() {
 
     return (
         <div className='services-section'>
-                <h2 class="section-title">What I have to offer</h2>
+                <h2 class="section-title">What I Can <span class='higlighted'>Offer</span> You</h2>
                 <div class="services">
                     <div class="service">
                         <img className="service-image" src={Shopify}></img>
