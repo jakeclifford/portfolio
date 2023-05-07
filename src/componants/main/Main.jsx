@@ -15,7 +15,6 @@ export default function Main() {
             strings: ["Shopify Developer.", "Front-end Devloper.", "UI Designer."]
         })
     },[])
-    
     return (
         
         <div className="main" id="main">

@@ -7,6 +7,7 @@ import Menu from "./componants/menu/Menu"
 import "./app.scss"
 import { useState, useEffect } from "react"
 import ClipLoader from "react-spinners/ClipLoader"
+import Services from "./componants/services/Services"
 
 function App() {
 
@@ -39,6 +40,7 @@ function App() {
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
       <div className="sections">
         <Main />
+        <Services />
         <About />
         <Portfolio />
         <Contact />

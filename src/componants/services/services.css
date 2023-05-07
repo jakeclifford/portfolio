@@ -1,0 +1,52 @@
+.services-section {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%
+}
+
+.services-section h1{
+    text-align: center;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.service {
+    flex: 1;
+    margin: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.service h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.service p {
+    color: rgb(106, 106, 106);
+}
+
+.service-image {
+    height: 60px;
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .services {
+        display: block;
+    }
+
+    .service {
+        margin: 80px 0
+    }
+}

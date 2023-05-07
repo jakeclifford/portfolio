@@ -30,7 +30,6 @@
     
 
     .sections{
-        height: calc(100vh - 70px);
         position: relative;
         top: 70px;
         background-color: rgba(0, 191, 255, 0);
@@ -41,9 +40,8 @@
             display: none
         }
 
-        > *{
-            height: calc(100vh - 70px);
-            scroll-snap-align: start;
+        .section {
+            margin: 100px
         }
     }
 }
