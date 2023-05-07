@@ -20,7 +20,7 @@ export default function Main() {
         <div className="main" id="main">
             <div className="main-content">
                 <div className="info" id="info">
-                    <h1 className="test">Hi, I'm Jake</h1>
+                    <h1 className="test">Hi There,<br></br>I'm Jake</h1>
                     <h2><span ref={textRef}></span></h2>
                     <a  href="#portfolio">
                         <img src={arrow} alt="down arrow" className="bounce"></img>
