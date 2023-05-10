@@ -9,7 +9,7 @@ import Quote from "./quote.svg"
 export default function About() {
 
     return (
-        <div class="testimonials-section">
+        <div class="testimonials-section" id='testimonials'>
             <h2 class="testimonials-title">What My <span class="higlighted">Clients</span> Say</h2>
             <div class="testimonials-container">
             <div class="testimonial">

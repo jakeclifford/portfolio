@@ -69,12 +69,12 @@ export default function Portfolio(props) {
     };
   
     return (
-      <section className="projects-section">
+      <section className="projects-section" id='projects'>
         <h2>Websites I've Worked on 👨‍💻</h2>
         <Slider {...settings}>
-          <div className='slider-option'>
-            <img className="focus-image" src={Stimagz} alt="Stimagz" />
-          </div>
+            <div className='slider-option'>
+                <img className="focus-image" src={Stimagz} alt="Stimagz" />
+            </div>
           <div className='slider-option'>
             <img className="project-image" src={Family} alt="Family" />
           </div>

@@ -9,7 +9,7 @@ import EmailIcon from '@mui/icons-material/Email';
 
 export default function Topnav({menuOpen, setMenuOpen}) {
     return (
-        <div className={"topnav " + (menuOpen && "active")}>
+        <div className={"topnav " + (menuOpen && "active")} id='topnav'>
             <div className="wrapper">
                 <div className="left">
                     <a href="#main" >

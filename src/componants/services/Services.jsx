@@ -6,7 +6,7 @@ import Figma from "./figma.png"
 export default function Services() {
 
     return (
-        <div className='services-section'>
+        <div className='services-section' id='services'>
                 <h2 class="section-title">What I Can <span class='higlighted'>Offer</span> You</h2>
                 <div class="services">
                     <div class="service">

@@ -25,7 +25,7 @@ export default function Contact() {
     }
 
     return (
-        <div class="contact">
+        <div class="contact" id='contact'>
         <h2>Would Love to Hear From You 👋</h2>
         <div class="contact-container">
             <form id="contact-form" onSubmit={sendEmail}>
