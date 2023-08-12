@@ -1,6 +1,6 @@
 import React, {useEffect, useRef} from 'react'
 import "./Main.scss"
-import jake from "./jake.png"
+import jake from "./jake.webp"
 import arrow from "./down.svg"
 import Graphic1 from "./graphic1.png"
 import { init } from 'ityped'
